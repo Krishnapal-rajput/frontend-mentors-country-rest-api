@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box; /* Ensure padding and borders are included in element's total width and height */
+}
+
+body {
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Set height to full viewport height */
+  font-family: "Nunito Sans", sans-serif; /* Set font for the body */
+}
+
+.main-heading {
+  box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.1); /* Add shadow to the main heading */
+}
+
+.header {
+  display: flex; /* Use flexbox for header layout */
+  justify-content: space-between; /* Space items apart */
+  align-items: center; /* Center items vertically */
+  max-width: 1280px; /* Set maximum width */
+  padding-inline: 24px; /* Horizontal padding */
+  margin-inline: auto; /* Center the header */
+}
+
+.heading {
+  font-weight: 800; /* Bold font for the heading */
+}
+
+.country-container {
+  max-width: 1280px; /* Set maximum width for country container */
+  margin: 36px auto; /* Center container with vertical margin */
+}
+
+.back-btn {
+  width: 120px; /* Set width for the back button */
+  height: 36px; /* Set height for the back button */
+  background-color: white; /* Background color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  display: flex; /* Use flexbox for button layout */
+  align-items: center; /* Center items vertically */
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2); /* Add shadow */
+  scale: 1; /* Set initial scale */
+  cursor: pointer; /* Change cursor on hover */
+  transition: all ease-in; /* Smooth transition for hover effects */
+}
+
+.back-link {
+  text-decoration-line: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent */
+  width: 100%; /* Full width for link */
+  display: inline-block; /* Display link as block */
+}
+
+.btn {
+  background-color: #fff; /* Button background color */
+  width: 100%; /* Full width button */
+  border: none; /* Remove border */
+  text-align: center; /* Center text */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.arrow {
+  font-size: 14px; /* Set font size for arrow icon */
+  margin-right: 8px; /* Space between icon and text */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.back-btn:hover {
+  scale: 1.05; /* Scale effect on hover */
+  cursor: pointer; /* Change cursor */
+}
+
+.country-information-section {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space items apart */
+  margin-top: 20px; /* Add margin above this section */
+}
+
+.country-flag {
+  width: 45%; /* Set width for the flag section */
+  object-fit: cover; /* Cover the area while maintaining aspect ratio */
+  border: 1px solid #ccc; /* Border around the flag */
+  overflow: hidden; /* Hide overflow */
+}
+
+.country-flag img {
+  width: 100%; /* Make the image fill the width of the container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove gaps under the image */
+}
+
+.country-information {
+  width: 45%; /* Set width for country information */
+}
+
+.country-information main {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space items apart */
+  line-height: 14px; /* Set line height for readability */
+}
+
+.foot {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  margin-top: 10px; /* Add margin for spacing */
+}
+
+.border-countries {
+  display: flex; /* Use flexbox for inline display */
+  flex-wrap: wrap; /* Allow wrapping if necessary */
+}
+
+.border-country {
+  border: 1px solid #ccc; /* Border around each country */
+  border-radius: 4px; /* Rounded corners */
+  padding: 5px 10px; /* Padding inside the span */
+  margin: 0 5px; /* Margin between spans */
+  display: inline-block; /* Ensure spans are inline */
+}
+
+.border-country a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Link color */
+}
+
+.border-country a:hover {
+  color: #007bff; /* Change color on hover */
+}

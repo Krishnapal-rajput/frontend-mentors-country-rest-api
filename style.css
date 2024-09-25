@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Set height to full viewport height */
+  font-family: "Nunito Sans", sans-serif; /* Set font for the body */
+}
+
+/* 
+body.dark-mode {
+  background-color: #121212; /* Dark background */
+/* color: #e0e0e0; Light text */
+/* } */
+/* .dark-mode-toggle {
+  border: 1px solid #ccc;  /* Border color */
+/*padding: 8px;             Spacing around the text */
+/* border-radius: 4px;      /* Rounded corners */
+/* display: inline-flex;     /* Align icon and text */
+/* align-items: center;      Center items vertically */ /*
+}
+.country-card.dark-mode {
+  background-color: #1e1e1e; /* Dark card background 
+} 
+*/
+
+.main-heading {
+  box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.1); /* Add shadow to main heading */
+}
+
+.header {
+  display: flex; /* Use flexbox for header layout */
+  justify-content: space-between; /* Space items apart */
+  align-items: center; /* Center items vertically */
+  max-width: 1280px; /* Set maximum width */
+  padding-inline: 24px; /* Horizontal padding */
+  margin-inline: auto; /* Center header */
+}
+
+.heading {
+  font-weight: 800; /* Bold font for heading */
+}
+
+.main-container {
+  padding: 24px; /* Add padding to main container */
+}
+
+.search-n-select {
+  margin-inline: auto; /* Center the search and select container */
+  max-width: 1280px; /* Set maximum width */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space items apart */
+  height: 72px; /* Set height for the container */
+}
+
+.search {
+  position: relative; /* Position relative for absolute positioning of the icon */
+}
+
+.search-input {
+  height: 48px; /* Set input height */
+  width: 460px; /* Set input width */
+  font-size: 24px; /* Set font size */
+  border: none; /* Remove border */
+  border-radius: 2.5px; /* Rounded corners */
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.1); /* Add shadow */
+  padding-left: 72px; /* Space for the icon */
+}
+
+.search-icon {
+  padding-left: 18px; /* Space around the icon */
+}
+
+input::placeholder {
+  color: #d3d3d3; /* Placeholder color */
+  opacity: 1; /* Full opacity for placeholder */
+  font-size: 24px; /* Font size for placeholder */
+}
+
+.search-icon {
+  position: absolute; /* Position icon absolutely */
+  left: 10px; /* Adjust position from left */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  color: #999; /* Icon color */
+}
+
+.search-svg {
+  color: #d3d3d3; /* Color for SVG search icon */
+}
+
+select {
+  height: 48px; /* Set select height */
+  width: 200px; /* Set select width */
+  font-size: 16px; /* Set font size */
+  padding-left: 20px; /* Left padding */
+  padding-right: 12px; /* Right padding */
+  border: none; /* Remove border */
+  border-radius: 2.5px; /* Rounded corners */
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.countries-container {
+  max-width: 1280px; /* Set maximum width for the countries container */
+  margin-inline: auto; /* Center the container */
+  margin-block: 48px; /* Vertical margins */
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping of country cards */
+  gap: 48px; /* Space between cards */
+  justify-content: space-between; /* Space cards evenly */
+}
+
+.country-card {
+  height: 360px; /* Set card height */
+  width: 280px; /* Set card width */
+  align-items: center; /* Center items vertically */
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.1); /* Add shadow to card */
+  border-radius: 5px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow content */
+  background-color: #fff; /* Background color */
+  cursor: pointer; /* Change cursor on hover */
+  scale: 1; /* Initial scale */
+  transition: all 0.2s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.country-link {
+  text-decoration-line: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent */
+  text-align: center; /* Center text */
+}
+
+.country-card:hover {
+  scale: 1.05; /* Scale effect on hover */
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1); /* Change shadow on hover */
+}
+
+.flag {
+  object-fit: contain; /* Maintain aspect ratio of the flag */
+  height: 50%; /* Set height of the flag */
+  width: inherit; /* Full width */
+}
+
+.img {
+  width: inherit; /* Full width for image */
+  height: 100%; /* Full height for image */
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1); /* Add shadow to image */
+}
+
+.country-info {
+  margin: 18px; /* Margin for country info */
+  text-align: left; /* Align text to the left */
+}
+
+h3 {
+  font-weight: 800; /* Bold font for headings */
+}
+@media (max-width: 960px) {
+  h2 {
+    font-size: 20px;
+  }
+  .search-input {
+    height: 40px;
+    width: 360px;
+    font-size: 20px;
+  }
+  .search-input::placeholder {
+    font-size: 20px;
+  }
+  .search-svg {
+    height: 20px;
+    width: 20px;
+  }
+  select {
+    height: 40px;
+    width: 160px;
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+}

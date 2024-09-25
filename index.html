@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+
+    <!-- Preconnect to Google Fonts for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts stylesheet -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Main JavaScript file, deferred loading -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="hero-container">
+      <header class="main-heading">
+        <div class="header">
+          <!-- Main title -->
+          <h2 class="heading">Where in the world?</h2>
+          <!-- Dark mode toggle  -->
+          <p
+            id="dark-mode-toggle"
+            style="cursor: pointer"
+            class="dark-mode-toggle"
+          >
+            <img
+              width="16px"
+              height="16px"
+              src="./icon/moon.png"
+              alt="moon icon"
+            />
+            &nbsp; Dark Mode
+          </p>
+        </div>
+      </header>
+
+      <main class="main-container">
+        <!-- Search and filter options -->
+        <div class="search-n-select">
+          <div class="search">
+            <!-- Search icon -->
+            <span class="search-icon">
+              <svg
+                class="search-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#d3d3d3"
+                  d="M 10 2 C 5.5965257 2 2 5.5965291 2 10 C 2 14.403471 5.5965257 18 10 18 C 11.752132 18 13.370523 17.422074 14.691406 16.458984 L 19.845703 21.613281 A 1.250125 1.250125 0 1 0 21.613281 19.845703 L 16.458984 14.691406 C 17.422074 13.370523 18 11.75213 18 10 C 18 5.5965291 14.403474 2 10 2 z M 10 4.5 C 13.052375 4.5 15.5 6.947627 15.5 10 C 15.5 13.052373 13.052375 15.5 10 15.5 C 6.9476251 15.5 4.5 13.052373 4.5 10 C 4.5 6.947627 6.9476251 4.5 10 4.5 z"
+                ></path>
+              </svg>
+            </span>
+            <!-- Search input field -->
+            <input
+              placeholder="Search for a country..."
+              type="text"
+              class="search-input"
+            />
+          </div>
+          <div class="select">
+            <div class="select-container">
+              <!-- Dropdown for filtering by continent -->
+              <select name="continents" id="continents">
+                <option selected hidden disabled value="">
+                  Filter by Region
+                </option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">Americas</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- Container for displaying the list of countries -->
+        <div class="countries-container"></div>
+      </main>
+    </div>
+  </body>
+</html>

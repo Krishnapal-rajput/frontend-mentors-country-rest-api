@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+
+    <!-- Preconnect to Google Fonts for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Google Fonts stylesheet -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="country-style.css" />
+
+    <!-- Main JavaScript files, deferred loading -->
+    <script src="script.js" defer></script>
+    <script src="country-script.js" defer></script>
+  </head>
+  <body>
+    <div class="hero-container">
+      <header class="main-heading">
+        <div class="header">
+          <!-- Main title of the page -->
+          <h2 class="heading">Where in the world?</h2>
+          <!-- Dark mode toggle  -->
+          <p
+            id="dark-mode-toggle"
+            style="cursor: pointer"
+            class="dark-mode-toggle"
+          >
+            <img
+              width="16px"
+              height="16px"
+              src="./icon/moon.png"
+              alt="moon icon"
+            />
+            &nbsp; Dark Mode
+          </p>
+        </div>
+      </header>
+
+      <main class="country-container">
+        <!-- Back button to return to the main page -->
+        <div class="back-btn">
+          <a href="./index.html" class="back-link">
+            <button class="btn">
+              <i class="fas fa-arrow-left arrow"></i> Back
+            </button>
+          </a>
+        </div>
+
+        <div class="country-information-section">
+          <!-- Container for the country's flag -->
+          <div class="country-flag"></div>
+
+          <div class="country-information">
+            <!-- Header for country information -->
+            <header class="heading-header"></header>
+
+            <main>
+              <!-- Left and right sections for country details -->
+              <div class="lmain"></div>
+              <div class="rmain"></div>
+            </main>
+
+            <!-- Footer section for additional information -->
+            <footer class="foot"></footer>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
